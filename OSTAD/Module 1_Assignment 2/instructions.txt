@@ -1,0 +1,14 @@
+// Module 1_Assignment 2
+// 2nd Live Assignment: Closure Demonstration
+
+// Create a function that returns a nested function and demonstrate closure behavior.
+
+// ✅ Requirements: Create a function that returns a nested function. Demonstrate closure behavior by accessing outer function variables inside the nested function. Call the function and log the results.
+
+// ✔️ Clearly define a function that returns another function.
+
+// ✔️ Demonstrate closure by maintaining state across function calls.
+
+// ✔️ Provide console logs.
+
+// ✔️ Ensure the script runs without syntax errors.
