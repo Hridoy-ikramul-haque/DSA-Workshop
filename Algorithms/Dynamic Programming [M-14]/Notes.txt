@@ -1,0 +1,4 @@
+dynamic programming- recursion+optimization
+2 types of - 
+ . top down [ using recursion]
+ . bottom up [using loop]
