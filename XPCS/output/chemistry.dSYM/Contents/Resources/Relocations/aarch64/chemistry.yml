@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Volumes/External/Data Structure & Algorithms/DSA-Workshop/XPCS/output/chemistry'
+relocations:     []
+...

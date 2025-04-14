@@ -1,0 +1,10 @@
+STL(Standard Template library)
+
+Standard Template Library (STL) is a collection of C++ template classes providing containers to store data (vectors, lists, maps) as well as algorithms to perform around them (searching, sorting).
+
+Major advantages of using STL are reusability, efficiency, readability, and consistency in coding practices.
+
+STL has 3 parts-
+1. Containers [EX- Vector , String, Map]
+2. Algorithms - reusable functions. [ex- in vector sort(),reverse(),push_back()]
+3. Iterators. -Iterators are objects that allow you to traverse through elements in various containers, such as arrays, vectors, sets, and maps (we'll look at sets and maps soon). They provide a way to access and manipulate elements within these containers.
