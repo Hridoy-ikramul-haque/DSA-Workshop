@@ -1,38 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
+int main() {
     int t;
     cin >> t;
-    while (t--)
-    {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++)
-        {
-            cin >> a[i];
-        }
+    cin.ignore(); // Flush newline
 
-        set<int> seen;
-        int ans = n;
+    while (t--) {
+        string s;
+        getline(cin, s);
 
-        // Traverse from end to start
-        for (int i = n - 1; i >= 0; i--)
-        {
-            if (seen.count(a[i]))
-            {
-                break;
+        string res = "";
+
+        for (char ch : s) {
+            if (ch == 'b') {
+                // remove last lowercase letter if exists
+                for (int i = res.size() - 1; i >= 0; i--) {
+                    if (islower(res[i])) {
+                        res.erase(res.begin() + i);
+                        break;
+                    }
+                }
             }
-            seen.insert(a[i]);
-            ans--;
+            else if (ch == 'B') {
+                // remove last uppercase letter if exists
+                for (int i = res.size() - 1; i >= 0; i--) {
+                    if (isupper(res[i])) {
+                        res.erase(res.begin() + i);
+                        break;
+                    }
+                }
+            }
+            else {
+                res += ch;
+            }
         }
 
-        cout << ans << '\n';
+        cout << res << '\n';
     }
 
     return 0;
